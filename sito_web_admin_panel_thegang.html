@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✧TheGang Community✧ - Sponsor & Admin</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Orbitron & Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #09090e 0%, #16002c 50%, #002b11 100%);
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        .font-orbitron {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        /* Effetti Glow Retrowave */
+        .neon-text-purple {
+            text-shadow: 0 0 10px #b537f2, 0 0 20px #b537f2, 0 0 40px #b537f2;
+        }
+        .neon-text-green {
+            text-shadow: 0 0 10px #00ff66, 0 0 20px #00ff66, 0 0 35px #00ff66;
+        }
+        .neon-border-purple {
+            box-shadow: 0 0 15px rgba(181, 55, 242, 0.4);
+            border: 1px solid rgba(181, 55, 242, 0.6);
+        }
+        .neon-border-green {
+            box-shadow: 0 0 15px rgba(0, 255, 102, 0.4);
+            border: 1px solid rgba(0, 255, 102, 0.6);
+        }
+
+        /* Animazione Vinile Rotante */
+        @keyframes spinSlow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .animate-spin-slow {
+            animation: spinSlow 12s linear infinite;
+        }
+
+        /* Vetro Sfumato / Glassmorphism */
+        .glass-card {
+            background: rgba(18, 18, 28, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- HEADER / NAVBAR -->
+    <header class="glass-card sticky top-0 z-50 border-b border-purple-900/40 px-4 py-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            
+            <!-- Logo & Brand -->
+            <div class="flex items-center gap-3">
+                <div class="relative w-12 h-12 flex items-center justify-center">
+                    <!-- Icona Vinile Animato -->
+                    <div class="w-12 h-12 rounded-full bg-black border-2 border-purple-500 flex items-center justify-center animate-spin-slow shadow-lg shadow-purple-500/30">
+                        <div class="w-4 h-4 rounded-full bg-gradient-to-tr from-green-400 to-purple-600 border border-white"></div>
+                    </div>
+                    <i class="fa-solid fa-music absolute text-xs text-white"></i>
+                </div>
+                <div>
+                    <h1 class="font-orbitron text-xl md:text-2xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-green-400">
+                        ✧THEGANG COMMUNITY✧
+                    </h1>
+                    <p class="text-xs text-gray-400">Official Discord Server Website</p>
+                </div>
+            </div>
+
+            <!-- Discord Link Button -->
+            <a href="https://discord.gg/njaqbshDEV" target="_blank" rel="noopener noreferrer" 
+               class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 font-semibold text-sm transition-all transform hover:scale-105 shadow-lg shadow-indigo-500/30">
+                <i class="fa-brands fa-discord text-lg"></i>
+                Entra nel Discord
+            </a>
+        </div>
+    </header>
+
+    <!-- CONTENUTO PRINCIPALE -->
+    <main class="flex-grow max-w-6xl w-full mx-auto p-4 md:p-6 space-y-12">
+
+        <!-- HERO SECTION RETROWAVE -->
+        <section class="glass-card rounded-3xl p-6 md:p-10 relative overflow-hidden text-center neon-border-purple my-6">
+            <div class="absolute -top-24 -right-24 w-60 h-60 bg-purple-600/20 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-24 -left-24 w-60 h-60 bg-green-600/20 rounded-full blur-3xl"></div>
+
+            <h2 class="font-orbitron text-3xl md:text-5xl font-black mb-4 tracking-wide text-white">
+                Fai crescere il tuo progetto su <span class="text-green-400">✧TheGang✧</span>
+            </h2>
+            <p class="text-gray-300 max-w-2xl mx-auto text-base md:text-lg mb-8 leading-relaxed">
+                Entra a far parte della nostra community! Vuoi pubblicizzare il tuo server Discord, canale o sito web? Scopri la nostra vetrina sponsor dedicata.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#sponsor-section" class="px-6 py-3 rounded-xl bg-green-500 hover:bg-green-400 text-black font-bold font-orbitron transition-all shadow-lg shadow-green-500/30 flex items-center gap-2">
+                    <i class="fa-solid fa-bullhorn"></i> Diventa Sponsor
+                </a>
+                <a href="#admin-section" class="px-6 py-3 rounded-xl glass-card hover:bg-purple-900/40 text-purple-300 font-bold font-orbitron transition-all border border-purple-500/40 flex items-center gap-2">
+                    <i class="fa-solid fa-lock"></i> Area Admin
+                </a>
+            </div>
+        </section>
+
+        <!-- SEZIONE SPONSORIZZAZIONI -->
+        <section id="sponsor-section" class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+            
+            <!-- Box Spiegazione -->
+            <div class="glass-card rounded-3xl p-6 md:p-8 neon-border-green space-y-6">
+                <div class="flex items-center gap-3 border-b border-gray-800 pb-4">
+                    <div class="w-10 h-10 rounded-xl bg-green-500/20 flex items-center justify-center text-green-400 text-xl">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-orbitron text-xl font-bold text-green-400">Spazio Sponsor Ufficiale</h3>
+                        <p class="text-xs text-gray-400">Promuovi il tuo progetto a tutta la community</p>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-green-400 mt-1"></i>
+                        <p class="text-sm text-gray-300">
+                            <strong>Canale Dedicato:</strong> Pubblica la tua pubblicità nel canale pubblico <span class="bg-gray-800 text-green-300 px-2 py-0.5 rounded font-mono">#📢︲sponsor</span>.
+                        </p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-green-400 mt-1"></i>
+                        <p class="text-sm text-gray-300">
+                            <strong>Quota Simbolica:</strong> Soli <span class="text-green-400 font-bold">2€ - 3€ al mese</span> per mantenere attivo il tuo link sponsorizzato.
+                        </p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-green-400 mt-1"></i>
+                        <p class="text-sm text-gray-300">
+                            <strong>Massima Visibilità:</strong> Il canale è visibile a tutti i membri del server ✧TheGang✧.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Istruzioni Step per Step -->
+                <div class="bg-black/40 rounded-2xl p-4 border border-gray-800 space-y-3">
+                    <h4 class="font-bold text-sm text-purple-400 uppercase tracking-wider">Come Attivarlo:</h4>
+                    <ol class="text-xs text-gray-300 space-y-2 list-decimal list-inside">
+                        <li>Fai la donazione tramite il pulsante PayPal qui sotto.</li>
+                        <li>Invia lo screenshot della ricevuta in DM all'Admin su Discord.</li>
+                        <li>Ottieni i permessi di scrittura nel canale sponsor!</li>
+                    </ol>
+                </div>
+
+                <!-- Botto Donazione PayPal -->
+                <div class="pt-2">
+                    <a href="https://www.paypal.me/TheGangpaypal" target="_blank" rel="noopener noreferrer" 
+                       class="w-full py-4 rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 font-orbitron font-bold text-center block text-white shadow-xl shadow-indigo-600/40 transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-brands fa-paypal text-xl mr-2"></i> Paga Ora con PayPal.Me
+                    </a>
+                    <p class="text-center text-xs text-gray-500 mt-2">Pagamento sicuro tramite PayPal (Emiliano Luca)</p>
+                </div>
+            </div>
+
+            <!-- Lista Sponsor Attivi (Pubblica) -->
+            <div class="glass-card rounded-3xl p-6 md:p-8 neon-border-purple space-y-6">
+                <div class="flex items-center justify-between border-b border-gray-800 pb-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-purple-500/20 flex items-center justify-center text-purple-400 text-xl">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-orbitron text-xl font-bold text-purple-400">Sponsor Attivi</h3>
+                            <p class="text-xs text-gray-400">Partner e progetti sostenitori</p>
+                        </div>
+                    </div>
+                    <span id="sponsor-count-badge" class="px-3 py-1 bg-purple-900/60 text-purple-300 rounded-full text-xs font-bold border border-purple-500/40">
+                        0 Attivi
+                    </span>
+                </div>
+
+                <!-- Contenitore Sponsor -->
+                <div id="public-sponsor-list" class="space-y-3 max-h-[350px] overflow-y-auto pr-1">
+                    <!-- Inserito via JS -->
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SEZIONE ADMIN PANEL (Login / Dashboard) -->
+        <section id="admin-section" class="pt-8">
+            <div class="glass-card rounded-3xl p-6 md:p-10 border border-purple-500/30 relative">
+                
+                <!-- LOGIN SCREEN (Mostrata di default) -->
+                <div id="admin-login-box" class="max-w-md mx-auto text-center space-y-6 py-6">
+                    <div class="w-16 h-16 rounded-2xl bg-purple-900/40 border border-purple-500/50 flex items-center justify-center mx-auto text-2xl text-purple-400 shadow-lg shadow-purple-500/20">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-orbitron text-2xl font-bold text-white">Accesso Riservato Admin</h3>
+                        <p class="text-xs text-gray-400 mt-1">Inserisci il codice segreto per accedere alla Dashboard</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="relative">
+                            <input type="password" id="admin-pass-input" placeholder="Codice segreto..." 
+                                   class="w-full px-5 py-3 rounded-xl bg-black/60 border border-purple-500/40 text-white placeholder-gray-500 focus:outline-none focus:border-green-400 text-center font-mono tracking-widest text-lg transition-all">
+                        </div>
+                        <button onclick="attemptAdminLogin()" 
+                                class="w-full py-3 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 font-orbitron font-bold text-white transition-all shadow-lg shadow-purple-600/30">
+                            <i class="fa-solid fa-key mr-2"></i> Sblocca Pannello
+                        </button>
+                    </div>
+                    
+                    <p id="login-error-msg" class="text-red-400 text-xs hidden font-semibold">
+                        <i class="fa-solid fa-triangle-exclamation mr-1"></i> Codice errato! Riprova.
+                    </p>
+                </div>
+
+                <!-- DASHBOARD ADMIN (Nascosta, sbloccata dopo login) -->
+                <div id="admin-dashboard" class="hidden space-y-8">
+                    
+                    <!-- Header Dashboard -->
+                    <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-gray-800 pb-4 gap-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-2xl bg-green-500/20 border border-green-500/40 flex items-center justify-center text-green-400 text-2xl">
+                                <i class="fa-solid fa-sliders"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-orbitron text-2xl font-bold text-green-400">Pannello di Controllo Boss</h3>
+                                <p class="text-xs text-gray-400">Gestisci gli sponsor in tempo reale per ✧TheGang✧</p>
+                            </div>
+                        </div>
+                        <button onclick="adminLogout()" class="px-4 py-2 rounded-xl bg-red-900/40 hover:bg-red-800/60 border border-red-500/40 text-red-300 text-xs font-bold transition-all self-start md:self-auto">
+                            <i class="fa-solid fa-right-from-bracket mr-1"></i> Esci dall'Admin
+                        </button>
+                    </div>
+
+                    <!-- Form Aggiungi Sponsor -->
+                    <div class="bg-black/40 rounded-2xl p-6 border border-gray-800 space-y-4">
+                        <h4 class="font-orbitron text-sm font-bold text-purple-400 uppercase tracking-wider">
+                            <i class="fa-solid fa-plus-circle mr-1"></i> Aggiungi Nuovo Sponsor
+                        </h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <input type="text" id="new-sponsor-name" placeholder="Nome Sponsor / Server" 
+                                   class="px-4 py-2.5 rounded-xl bg-black/60 border border-gray-700 text-white text-sm focus:outline-none focus:border-purple-500">
+                            <input type="url" id="new-sponsor-url" placeholder="https://discord.gg/..." 
+                                   class="px-4 py-2.5 rounded-xl bg-black/60 border border-gray-700 text-white text-sm focus:outline-none focus:border-purple-500">
+                            <input type="text" id="new-sponsor-price" placeholder="Prezzo (es. 2€/mese)" 
+                                   class="px-4 py-2.5 rounded-xl bg-black/60 border border-gray-700 text-white text-sm focus:outline-none focus:border-purple-500">
+                        </div>
+                        <button onclick="addSponsor()" 
+                                class="px-6 py-2.5 rounded-xl bg-green-500 hover:bg-green-400 text-black font-bold font-orbitron text-sm transition-all shadow-md shadow-green-500/20">
+                            + Salva Sponsor
+                        </button>
+                    </div>
+
+                    <!-- Tabella Gestione Sponsor -->
+                    <div class="space-y-4">
+                        <h4 class="font-orbitron text-sm font-bold text-gray-300 uppercase tracking-wider">
+                            Sponsor Registrati (Salvati nel Browser)
+                        </h4>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left text-sm text-gray-300">
+                                <thead class="bg-purple-950/40 text-purple-300 text-xs font-orbitron uppercase border-b border-gray-800">
+                                    <tr>
+                                        <th class="p-3">Nome</th>
+                                        <th class="p-3">Link</th>
+                                        <th class="p-3">Quota</th>
+                                        <th class="p-3 text-right">Azione</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="admin-sponsor-table" class="divide-y divide-gray-800">
+                                    <!-- Popolato da JS -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="glass-card mt-12 border-t border-purple-900/40 py-6 text-center text-xs text-gray-500">
+        <p>✧TheGang Community✧ &copy; 2026 - Gestione Sponsorizzazioni Discord</p>
+        <p class="mt-1">Creato per il server con il bot TheGangBuddy '+ & Hornet</p>
+    </footer>
+
+    <!-- LOGICA JAVASCRIPT -->
+    <script>
+        // Password Segreta Admin predefinita
+        const SECRET_CODE = "GANG2026";
+
+        // Array Iniziale Sponsor (se il localStorage è vuoto)
+        const defaultSponsors = [
+            { id: 1, name: "✧TheGang Official Server✧", url: "https://discord.gg/njaqbshDEV", price: "VIP Admin" }
+        ];
+
+        // Caricamento Sponsor da LocalStorage
+        function getSponsors() {
+            const saved = localStorage.getItem("thegang_sponsors");
+            if (saved) {
+                try {
+                    return JSON.parse(saved);
+                } catch(e) {
+                    return defaultSponsors;
+                }
+            }
+            return defaultSponsors;
+        }
+
+        // Salvataggio Sponsor in LocalStorage
+        function saveSponsors(sponsors) {
+            localStorage.setItem("thegang_sponsors", JSON.stringify(sponsors));
+            renderLists();
+        }
+
+        // Renderizza sia la lista pubblica che la tabella Admin
+        function renderLists() {
+            const sponsors = getSponsors();
+
+            // Render Pubblico
+            const publicContainer = document.getElementById("public-sponsor-list");
+            const badgeCount = document.getElementById("sponsor-count-badge");
+            badgeCount.innerText = `${sponsors.length} Attivi`;
+
+            if (sponsors.length === 0) {
+                publicContainer.innerHTML = `<p class="text-sm text-gray-500 text-center py-6">Nessun altro sponsor attivo al momento.<br>Sii il primo ad aggiungerti!</p>`;
+            } else {
+                publicContainer.innerHTML = sponsors.map(s => `
+                    <div class="flex items-center justify-between p-3.5 rounded-2xl bg-black/40 border border-gray-800 hover:border-purple-500/50 transition-all">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-purple-600/20 text-purple-400 flex items-center justify-center font-bold text-xs">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-white">${escapeHtml(s.name)}</h4>
+                                <span class="text-xs text-green-400 font-mono">${escapeHtml(s.price || "Sponsor")}</span>
+                            </div>
+                        </div>
+                        <a href="${escapeHtml(s.url)}" target="_blank" rel="noopener noreferrer" 
+                           class="px-3 py-1.5 rounded-lg bg-purple-600/30 hover:bg-purple-600 text-purple-200 text-xs font-semibold transition-all">
+                            Visita <i class="fa-solid fa-arrow-up-right-from-square text-[10px] ml-1"></i>
+                        </a>
+                    </div>
+                `).join('');
+            }
+
+            // Render Admin Table
+            const adminTable = document.getElementById("admin-sponsor-table");
+            if (sponsors.length === 0) {
+                adminTable.innerHTML = `<tr><td colspan="4" class="p-4 text-center text-gray-500">Nessun dato.</td></tr>`;
+            } else {
+                adminTable.innerHTML = sponsors.map(s => `
+                    <tr class="hover:bg-black/30">
+                        <td class="p-3 font-semibold text-white">${escapeHtml(s.name)}</td>
+                        <td class="p-3 font-mono text-xs text-purple-300 truncate max-w-[180px]">${escapeHtml(s.url)}</td>
+                        <td class="p-3 text-green-400 text-xs">${escapeHtml(s.price || "N/D")}</td>
+                        <td class="p-3 text-right">
+                            <button onclick="removeSponsor(${s.id})" class="px-2.5 py-1 rounded bg-red-900/50 hover:bg-red-700 text-red-200 text-xs transition-all">
+                                <i class="fa-solid fa-trash-can"></i> Rimuovi
+                            </button>
+                        </td>
+                    </tr>
+                `).join('');
+            }
+        }
+
+        // Funzione Login Admin
+        function attemptAdminLogin() {
+            const input = document.getElementById("admin-pass-input").value;
+            const errorMsg = document.getElementById("login-error-msg");
+
+            if (input === SECRET_CODE) {
+                document.getElementById("admin-login-box").classList.add("hidden");
+                document.getElementById("admin-dashboard").classList.remove("hidden");
+                errorMsg.classList.add("hidden");
+                document.getElementById("admin-pass-input").value = "";
+            } else {
+                errorMsg.classList.remove("hidden");
+            }
+        }
+
+        // Funzione Logout Admin
+        function adminLogout() {
+            document.getElementById("admin-dashboard").classList.add("hidden");
+            document.getElementById("admin-login-box").classList.remove("hidden");
+        }
+
+        // Aggiungi Sponsor (Admin)
+        function addSponsor() {
+            const nameInput = document.getElementById("new-sponsor-name");
+            const urlInput = document.getElementById("new-sponsor-url");
+            const priceInput = document.getElementById("new-sponsor-price");
+
+            const name = nameInput.value.trim();
+            const url = urlInput.value.trim();
+            const price = priceInput.value.trim() || "2€/mese";
+
+            if (!name || !url) {
+                alert("Inserisci sia il nome che il link dello sponsor!");
+                return;
+            }
+
+            const sponsors = getSponsors();
+            const newSponsor = {
+                id: Date.now(),
+                name: name,
+                url: url,
+                price: price
+            };
+
+            sponsors.push(newSponsor);
+            saveSponsors(sponsors);
+
+            // Resetta i campi
+            nameInput.value = "";
+            urlInput.value = "";
+            priceInput.value = "";
+        }
+
+        // Rimuovi Sponsor (Admin)
+        function removeSponsor(id) {
+            let sponsors = getSponsors();
+            sponsors = sponsors.filter(s => s.id !== id);
+            saveSponsors(sponsors);
+        }
+
+        // Utility Sanificazione HTML
+        function escapeHtml(str) {
+            return String(str)
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+
+        // Avvio al caricamento della pagina
+        window.onload = function() {
+            renderLists();
+
+            // Consente di premere INVIO per fare il login
+            document.getElementById("admin-pass-input").addEventListener("keypress", function(e) {
+                if (e.key === "Enter") {
+                    attemptAdminLogin();
+                }
+            });
+        };
+    </script>
+</body>
+</html>
